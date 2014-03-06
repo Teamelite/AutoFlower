@@ -1,0 +1,28 @@
+name: AutoFlower
+main: io.teamelite.AutoFlower
+version: 1.0
+commands:
+    autoflower:
+        description: populate field with grass and flowers
+        usage: /autoflower [radius] <chance> <flowerChance>
+        permission: autoflower.main
+        permission-message: you do not have permission to use /autoflower
+    clearflower:
+        description: clear flowers in radius
+        usage: /clearflower [radius]
+        permission: autoflower.main
+        permission-message: You do not have permission to use /clearflower
+    autosnow:
+        description: populate field with snow (level 1/level 2)
+        usage: /autosnow [radius]
+        permission: autoflower.main
+        permission-message: You do not have permission to use /autosnow
+    clearsnow:
+        description: clear snow in radius
+        usage: /clearsnow
+        permission: autoflower.main
+        permission-message: You do not have permission to use /clearsnow
+permissions:
+    autoflower.main:
+        description: allows use of /autoflower
+        default: op
